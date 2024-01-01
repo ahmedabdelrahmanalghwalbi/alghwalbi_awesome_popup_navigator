@@ -23,16 +23,24 @@ class AlghwalbiAwesomePopup extends StatelessWidget {
 
   /// Awesome Popup [shrinkedWidget] tooltip.
   final String? tooltip;
-  const AlghwalbiAwesomePopup({
-    required this.popupKey,
-    required this.expandedWidget,
-    required this.shrinkedWidget,
-    super.key,
-    this.shapeBorder,
-    this.color,
-    this.tooltip,
-    this.borderRadius,
-  });
+
+  /// Awesome Popup [isScrollable] make [expandedWidget] scrollable.
+  final bool? isScrollable;
+
+  /// Awesome Popup [scrollDirection] working with [isScrollable] property to controll the direction of scrolling.
+  final Axis? scrollDirection;
+
+  const AlghwalbiAwesomePopup(
+      {required this.popupKey,
+      required this.expandedWidget,
+      required this.shrinkedWidget,
+      super.key,
+      this.shapeBorder,
+      this.color,
+      this.isScrollable,
+      this.tooltip,
+      this.borderRadius,
+      this.scrollDirection});
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +60,11 @@ class AlghwalbiAwesomePopup extends StatelessWidget {
                       borderRadius: borderRadius,
                       color: color,
                       shape: shapeBorder,
-                      child: expandedWidget),
+                      child: isScrollable == true
+                          ? SingleChildScrollView(
+                              scrollDirection: scrollDirection ?? Axis.vertical,
+                              child: expandedWidget)
+                          : expandedWidget),
                 ),
               ),
             ),
