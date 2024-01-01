@@ -5,17 +5,20 @@
 # flutter pub publish
 
 #package repository
-repository: https://github.com/ahmedabdelrahmanalghwalbi/dart_prompet_cli
+repository: https://github.com/ahmedabdelrahmanalghwalbi/alghwalbi_awesome_popup_navigator
 #package respository issues
-issue_tracker: https://github.com/ahmedabdelrahmanalghwalbi/dart_prompet_cli/issues
+issue_tracker: https://github.com/ahmedabdelrahmanalghwalbi/alghwalbi_awesome_popup_navigator/issues
 #one of the requirements to upload this package is provide home page
 homepage: https://www.linkedin.com/in/ahmed-abdelrahman-ali-96b249201/
 #one of the requirements to upload this package is provide sdk version
 environment:
   sdk: "^3.1.5"
-# my project name
-name: alghwalbi_awesome_popup_navigator
+dependencies:
+  flutter:
+    sdk: flutter
+#my project name
+name: alghwalbi_awesome_popup
 #my project version
 version: 1.0.0
-#my project description
+#alghwalbi_awesome_popup description
 description: A Package for implementing showing animated popup with (hero) transition and navigation.
