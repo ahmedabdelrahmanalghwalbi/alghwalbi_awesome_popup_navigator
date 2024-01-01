@@ -10,7 +10,7 @@
     1. Add the package to your `pubspec.yaml` file:
     yaml
         dependencies:
-            alghwalbi_awesome_popup: ^1.0.0
+            alghwalbi_awesome_popup: <-- Latest version>
 
     2. Run the following command to fetch the package:
     flutter pub get
@@ -21,22 +21,21 @@
     4-Start using the AlghwalbiAwesomePopup widget in your Flutter application
 
    ## Usage
-
-        ```dart
         import 'package:alghwalbi_awesome_popup/alghwalbi_awesome_popup.dart';
 
         AlghwalbiAwesomePopup(
-        popupKey: "testPopupKey",
-        shrinkedWidget: MyShrinkedWidget(),
-        expandedWidget: MyExpandedWidget(),
-        borderRadius: BorderRadius.circular(10.0),
-        color: Colors.red,
-        isScrollable: false,
-        scrollDirection: Axis.vertical,
-        tooltip: "Click me to Popup !!!!!!!!",
-        shapeBorder: RoundedRectangleBorder(),
+            popupKey: "testPopupKey",
+            shrinkedWidget: MyShrinkedWidget(),
+            expandedWidget: MyExpandedWidget(),
+            borderRadius: BorderRadius.circular(10.0),
+            color: Colors.red,
+            isScrollable: false,
+            scrollDirection: Axis.vertical,
+            tooltip: "Click me to Popup !!!!!!!!",
+            shapeBorder: RoundedRectangleBorder(),
         );
-        ```This code demonstrates the usage of the `AlghwalbiAwesomePopup` class from the `alghwalbi_awesome_popup` package. It creates a popup widget with various properties like `popupKey`, `shrinkedWidget`, `expandedWidget`, `borderRadius`, `color`, `isScrollable`, `scrollDirection`, `tooltip`, and `shapeBorder`.
+
+        This code demonstrates the usage of the `AlghwalbiAwesomePopup` class from the `alghwalbi_awesome_popup` package. It creates a popup widget with various properties like `popupKey`, `shrinkedWidget`, `expandedWidget`, `borderRadius`, `color`, `isScrollable`, `scrollDirection`, `tooltip`, and `shapeBorder`.
 
    ## Contributing
       Thank you for considering contributing to this project! To get started, please follow these guidelines:
