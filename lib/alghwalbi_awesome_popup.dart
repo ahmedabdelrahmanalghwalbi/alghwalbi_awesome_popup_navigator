@@ -45,7 +45,7 @@ class AlghwalbiAwesomePopup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Tooltip(
-      message: tooltip,
+      message: tooltip ?? '',
       child: GestureDetector(
         onTap: () {
           Navigator.of(context).push(
