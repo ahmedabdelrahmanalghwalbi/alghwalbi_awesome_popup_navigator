@@ -19,6 +19,6 @@ dependencies:
 #my project name
 name: alghwalbi_awesome_popup
 #my project version
-version: 1.0.1
+version: 1.0.2
 #alghwalbi_awesome_popup description
 description: A Package for implementing showing animated popup with (hero) transition and navigation.
