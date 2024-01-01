@@ -15,10 +15,10 @@ class AlghwalbiAwesomePopup extends StatelessWidget {
   /// Awesome Popup Shape Border.
   final ShapeBorder? shapeBorder;
 
-  /// Awesome Popup Border Radius.
+  /// Awesome Popup Border Radius that applied only on [expandedWidget].
   final BorderRadius? borderRadius;
 
-  /// Awesome Popup Color.
+  /// Awesome Popup Color that applied only on [expandedWidget].
   final Color? color;
 
   /// Awesome Popup [shrinkedWidget] tooltip.
