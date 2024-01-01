@@ -1,0 +1,14 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "alghwalbi_awesome_popup_navigator",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    }
+  ],
+  "generated": "2024-01-01T08:52:53.177105Z",
+  "generator": "pub",
+  "generatorVersion": "3.2.3"
+}
